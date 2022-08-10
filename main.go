@@ -19,7 +19,7 @@ func main() {
 
 	log.Println("Starting Port :8888") //memberikan pesan di dalam terminal
 
-	err := http.ListenAndServe( mux) //perintah ini untuk menjalankan web server
+	err := http.ListenAndServe( "8888", mux) //perintah ini untuk menjalankan web server
 	log.Fatal(err)
 
 }
